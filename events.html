@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Se våra kommande litterära evenemang hos Pärmar & Poesi.">
+  <meta name="description" content="Se våra kommande litterära evenemang hos Pärmar & Poesi, inklusive författarträffar och poesikvällar i Stockholm, Göteborg, Malmö och andra städer.">
+  <meta name="keywords" content="evenemang, litterära evenemang, författarträffar, poesikvällar, Pärmar & Poesi, bokhandel, Stockholm, Göteborg, Malmö, litteratur, registrera sig för evenemang">
+  <meta name="author" content="Pärmar & Poesi">
+  <meta name="robots" content="index, follow">
   <title>Events - Pärmar & Poesi</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -48,6 +51,7 @@
           <div>
             <label for="event-city" class="block font-semibold">Välj stad:</label>
             <select id="event-city" name="event-city" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-red-600">
+              <option value="" disabled selected>Välj stad</option>
               <option value="stockholm">Stockholm</option>
               <option value="gothenburg">Göteborg</option>
               <option value="malmo">Malmö</option>
@@ -62,6 +66,7 @@
           <div>
             <label for="event-language" class="block font-semibold">Välj språk:</label>
             <select id="event-language" name="event-language" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-red-600">
+              <option value="" disabled selected>Välj språk</option>
               <option value="swedish">Svenska</option>
               <option value="english">Engelska</option>
               <option value="german">Tyska</option>
@@ -80,10 +85,12 @@
         </form>
       </section>
 
-      <!-- Image Section -->
-      <section class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-        <img src="images/bookcafe.jpg" alt="Evenemang" class="max-w-md rounded-lg shadow-lg">
-      </section>
+      <!-- Image Section with Heading -->
+<section class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+  <h2 class="sr-only">Evenemangsbilder</h2> <!-- Added heading for accessibility -->
+  <img src="images/bookcafe.jpg" alt="Författarträff och litterära evenemang hos Pärmar & Poesi" class="max-w-md rounded-lg shadow-lg">
+</section>
+
     </div>
   </main>
 
